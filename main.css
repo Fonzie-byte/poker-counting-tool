@@ -33,12 +33,14 @@ button:hover {
 }
 
 input[type=number] {
+	/* Should appear as a textfield, to prevent issues with onfocus/onchange */
 	-moz-appearance: textfield;
 
 	text-align: right;
 	width: 6em;
 }
 
+/* Should appear as a textfield, to prevent issues with onfocus/onchange: Chrome's Clusterfuck Version™ */
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
