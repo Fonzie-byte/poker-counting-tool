@@ -6,13 +6,13 @@
 }
 
 body {
-	font: 12pt/1.5 'Nunito', sans-serif;
+	font: 16px/1.5 'Nunito', sans-serif;
 
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 2rem;
 
-	background: #152;
+	background: url("img/kelly-green-canvas-fabric-texture.jpg") repeat top center fixed #042;
 	color: #fff;
 }
 

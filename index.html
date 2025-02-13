@@ -2,58 +2,34 @@
 <html>
 <head>
 	<title>Poker Counting Tool</title>
-	<link rel=icon href="front-card.ico" type="image/x-icon" />
-	<link rel=stylesheet href="main.css" />
+	<link rel=icon href="img/front-card.ico" type="image/x-icon">
+	<link rel=stylesheet href="main.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<button onclick="addPlayer(20)">Add player</button>
+
 <table>
+<thead>
 	<tr>
 		<th></th>
 		<th>Has</th>
 		<th>Current bet</th>
+		<th></th>
 	</tr>
-
-	<tr>
-		<td><label for=a>Anna</label></td>
-		<td><input id=a type=number value=20 disabled /></td>
-		<td><input class=current type=number min=0 value=0 onfocus="this.oldvalue = this.value" onchange="adjustValues(this, a)" /></td>
-	</tr>
-
-	<tr>
-		<td><label for=b>Bob</label></td>
-		<td><input id=b type=number value=20 disabled /></td>
-		<td><input class=current type=number min=0 value=0 onfocus="this.oldvalue = this.value" onchange="adjustValues(this, b)" /></td>
-	</tr>
-
-	<tr>
-		<td><label for=c>Chris</label></td>
-		<td><input id=c type=number value=20 disabled /></td>
-		<td><input class=current type=number min=0 value=0 onfocus="this.oldvalue = this.value" onchange="adjustValues(this, c)" /></td>
-	</tr>
-
-	<tr>
-		<td><label for=d>Dahlia</label></td>
-		<td><input id=d type=number value=20 disabled /></td>
-		<td><input class=current type=number min=0 value=0 onfocus="this.oldvalue = this.value" onchange="adjustValues(this, d)" /></td>
-	</tr>
-
-	<tr>
-		<td></td>
-		<td>Bet:</td>
-		<td><input type=number id=total value=0 disabled /></td>
+</thead>
+<tbody id=player-area>
+</tbody>
 </table>
 
-<br />
+<br>
 
-<button onclick="assignBet(a)">Anna wins!</button>
-<button onclick="assignBet(b)">Bob wins!</button>
-<button onclick="assignBet(c)">Chris wins!</button>
-<button onclick="assignBet(d)">Dahlia wins!</button>
+<label for=total>Bet:</label>
+<input type=number id=total value=0 disabled>
 
-<script rel="functions.js"></script>
+<script src="functions.js"></script>
 
 </body>
 </html>
