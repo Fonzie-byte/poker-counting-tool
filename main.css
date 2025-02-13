@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 12pt/1.5 'Nunito', sans-serif;
+
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+
+	background: #152;
+	color: #fff;
+}
+
+input, select, textarea, button {
+	font: inherit;
+	color: inherit;
+
+	background: #122;
+	border: 1px solid;
+}
+
+button {
+	padding: .25rem;
+	border-radius: .25rem;
+}
+button:hover {
+	background: #233;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+
+	text-align: right;
+	width: 6em;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
