@@ -1,8 +1,8 @@
 # poker-counting-tool
-Simple web application to help you keep track of four player's bets and totals for games of poker.
+Simple web application to help you keep track of players their bets and totals for games of poker.
 
 ## Todo
-While it works for four players, I'd like to change the following:
+While it works, I'd like to change the following:
 
 - [x]  Add an "add player"-button, as well as maybe a "remove player" button
 - [ ]  Make the default bet adjustable, rather than  just 20
