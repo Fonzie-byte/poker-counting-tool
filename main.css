@@ -16,11 +16,15 @@ body {
 	color: #fff;
 }
 
+th, td {
+	padding: .125rem .25rem;
+}
+
 input, select, textarea, button {
 	font: inherit;
 	color: inherit;
 
-	background: #122;
+	background: #021;
 	border: 1px solid;
 }
 
